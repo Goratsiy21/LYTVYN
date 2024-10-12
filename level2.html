@@ -105,6 +105,22 @@
             box-shadow: none; 
             display: block; 
         }
+
+        /* Стилізація кнопки для повернення на головну */
+        .back-button {
+            padding: 8px 15px; /* Розмір кнопки */
+            background-color: #006600; /* Темно-зелений колір */
+            color: white;
+            text-decoration: none;
+            font-size: 16px; /* Шрифт */
+            border-radius: 5px;
+            margin-bottom: 20px; /* Відступ знизу */
+        }
+
+        .back-button:hover {
+            background-color: #004d00; /* Темніший темно-зелений при наведенні */
+        }
+
     </style>
 </head>
 <body>
@@ -112,65 +128,64 @@
     <!-- Ліва панель -->
     <div class="sidebar">
         <img src="img/2.png" alt="Емблема">
-        <a href="#" onclick="showSection('main')">Головна сторінка</a>
-        <a href="#" onclick="showSection('contests')">Конкурси та олімпіади</a>
-        <a href="#" onclick="showSection('methods')">Методична скарбничка</a>
-        <a href="#" onclick="showSection('courses')">Курси підвищення кваліфікації</a>
-        <a href="#" onclick="showSection('awards')">Грамоти та нагороди</a>
-        <a href="#" onclick="showSection('diplomas')">Дипломи</a>
+        <a href="#" onclick="showSection('1')">Матеріал 1</a>
+        <a href="#" onclick="showSection('2')">Матеріал 2</a>
+        <a href="#" onclick="showSection('3')">Матеріал 3</a>
+        <a href="#" onclick="showSection('4')">Матеріал 4</a>
+        <a href="#" onclick="showSection('5')">Матеріал 5</a>
+        <a href="index.html" class="back-button">Повернутися на головну</a>
     </div>
 
     <!-- Головна сторінка -->
     <div class="main-content" id="main">
         <div class="profile">
-            <img src="img/1.jpg" alt="Фото">
-            <h1>Гапонов Сергій Володимирович</h1>
-            <p><span class="label">Посада:</span> Вчитель закладу загальної середньої освіти</p>
-            <p><span class="label">Вчитель:</span> Захисту України,  спецкурсу «Основи прикордонної служби»</p>
-            <p><span class="label">Кваліфікаційна категорія:</span> Спеціаліст вищої категорії</p>
-            <p><span class="label">Стаж педагогічної роботи:</span> 32 років</p>
-
+            
         </div>
     </div>
 
-    <!-- Конкурси та олімпіади -->
-    <div class="main-content carousel-container" id="contests">
-        <h2>Конкурси та олімпіади</h2>
-        <img src="img/1.jpg" alt="Методична робота 1">
-        <img src="img/1.jpg" alt="Методична робота 1">
-    </div>
-
-    <!-- Методична скарбничка -->
-    <div class="main-content carousel-container" id="methods">
-        <h2>Методична скарбничка</h2>
-        <img src="img/1.jpg" alt="Методична робота 1">
-        <img src="img/1.jpg" alt="Методична робота 1">
-        <img src="img/1.jpg" alt="Методична робота 1">
-        <img src="img/1.jpg" alt="Методична робота 1">
-        <img src="img/1.jpg" alt="Методична робота 1">
-        <img src="img/1.jpg" alt="Методична робота 1">
-
-    </div>
-
-    <!-- Курси підвищення кваліфікації -->
-    <div class="main-content carousel-container" id="courses">
-        <h2>Курси підвищення кваліфікації</h2>
-        <img src="img/1.jpg" alt="Методична робота 1">
+    <!-- Матеріал 1 -->
+    <div class="main-content carousel-container" id="1">
+        <h2>Матеріал 1</h2>
+        <!-- Анотація перед першою картинкою -->
+        <p>Анотація перед першою картинкою. Опис або пояснення.</p>
         <img src="img/1.jpg" alt="Методична робота 1">
     </div>
 
-    <!-- Грамоти та нагороди -->
-    <div class="main-content carousel-container" id="awards">
-        <h2>Грамоти та нагороди</h2>
+
+    <!-- Матеріал 2 -->
+    <div class="main-content carousel-container" id="2">
+        <h2>Матеріал 2</h2>
+        <!-- Анотація перед першою картинкою -->
+        <p>Анотація перед першою картинкою. Опис або пояснення.</p>
         <img src="img/1.jpg" alt="Методична робота 1">
-        <img src="img/1.jpg" alt="Методична робота 1">
+
     </div>
 
-    <!-- Дипломи -->
-    <div class="main-content carousel-container" id="diplomas">
-        <h2>Дипломи</h2>
+    <!-- Матеріал 3 -->
+    <div class="main-content carousel-container" id="3">
+        <h2>Матеріал 3</h2>
+        <!-- Анотація перед першою картинкою -->
+        <p>Анотація перед першою картинкою. Опис або пояснення.</p>
         <img src="img/1.jpg" alt="Методична робота 1">
+
+    </div>
+
+    <!-- Матеріал 4 -->
+    <div class="main-content carousel-container" id="4">
+        <h2>Матеріал 4</h2>
+        <!-- Анотація перед першою картинкою -->
+        <p>Анотація перед першою картинкою. Опис або пояснення.</p>
         <img src="img/1.jpg" alt="Методична робота 1">
+
+    </div>
+
+    <!-- Матеріал 5 -->
+    <div class="main-content carousel-container" id="5">
+        <h2>Матеріал 5</h2>
+        <!-- Анотація перед першою картинкою -->
+        <p>Анотація перед першою картинкою. Опис або пояснення.</p>
+        <img src="img/1.jpg" alt="Методична робота 1">
+
     </div>
 
     <script>
